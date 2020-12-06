@@ -5,6 +5,8 @@ import Typical from "../Components/Typical"
 import otts from "../Images/otts.png"
 import video from "../Images/video.jpeg"
 import search from "../Images/search.png"
+import play from "../Images/play.png"
+import phone from "../Images/phone.png"
 import "./Home.css"
 
 export class Home extends Component {
@@ -37,22 +39,28 @@ export class Home extends Component {
                     </div>
 
                     <div className="wrap" >
-                        <div className="width-change" >
-                            <div className="h1" >
-                                Download the app now
+                        <div className="width-change wrap" style={{flexWrap:"wrap"}} >
+                            <div>
+                                <div className="h1" >
+                                    Download the app now
+                                </div>
+                                <p style={{ fontSize: "20px" }} >
+                                    Watch anywhere. Cancel anytime. <br />
+                                    Save your favourites easily and always have something to watch.
+                                </p>
+                                <div>
+                                    <img src={play}alt="i" width="200px" />
+                                </div>
                             </div>
-                            <p style={{ fontSize: "20px" }} >
-                                Watch anywhere. Cancel anytime. <br />
-                                Save your favourites easily and always have something to watch.
-                            </p>
+                            <div className="img-container wrap"  >
+                                <img className="a-image" alt="i" src={phone} width="100%" />
+                            </div>
                         </div>
+
                     </div>
 
                     <div className="wrap" >
                         <div className="width-change" >
-                            <div className="img-container wrap" >
-                                <img className="a-image" alt="i" src={video} width="100%" />
-                            </div>
                             <div className="img-container" >
                                 <div className="h1" >
                                     A Video Experience Like No Other
@@ -62,14 +70,14 @@ export class Home extends Component {
                                     experience.
                                 </p>
                             </div>
+                            <div className="img-container wrap" >
+                                <img className="a-image" alt="i" src={video} width="100%" />
+                            </div>
                         </div>
                     </div>
 
                     <div className="wrap" >
                         <div className="width-change" >
-                            <div className="img-container wrap" >
-                                <img className="a-image" alt="i" src={search} width="50%" />
-                            </div>
                             <div>
                                 <div className="h1" >
                                     Smart Search
@@ -78,14 +86,14 @@ export class Home extends Component {
                                     Optimized content to reduce complexity and delay in accessing content.
                                 </p>
                             </div>
+                            <div className="img-container wrap" >
+                                <img className="a-image" alt="i" src={search} width="50%" />
+                            </div>
                         </div>
                     </div>
 
-                    <div className="wrap" style={{flexWrap:"wrap"}} >
+                    <div className="wrap" style={{ flexWrap: "wrap" }} >
                         <div className="width-change" >
-                            <div className="img-container" >
-                                <img className="a-image" alt="i" src={otts} width="100%" />
-                            </div>
                             <div>
                                 <div className="h1" >
                                     Unlimited movies, TV shows and more.
@@ -94,6 +102,9 @@ export class Home extends Component {
                                     We offer popular TV, movies and knowledge-based content from India and the world.
                                     With content in 8 languages, spanning 15 productions.
                                 </p>
+                            </div>
+                            <div className="img-container" >
+                                <img className="a-image" alt="i" src={otts} width="100%" />
                             </div>
                         </div>
                     </div>
