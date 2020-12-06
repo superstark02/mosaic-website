@@ -8,4 +8,9 @@ div{
   font-family: darwin;
 }
 
-
+.wrap{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}

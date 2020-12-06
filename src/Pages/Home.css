@@ -1,0 +1,59 @@
+.image{
+    background-image: url(../Images/webcover.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+
+.overlay{
+    height: 70vh;
+    background-image: linear-gradient(to right, #282828 , transparent);
+    padding: 100px 0px;
+}
+
+.cover-para{
+    width: 50%;
+    font-size: 18px;
+}
+
+.width-change{
+    width: 70%;
+    margin: 50px 0px;
+    justify-content: space-between;
+}
+
+.h1{
+    font-size: 50px;
+    margin: 20px 0px;
+}
+
+.typical{
+    font-size: 60px;
+}
+
+.a-image{
+    filter: drop-shadow(0px 10px 30px black);
+}
+
+.img-container{
+    width: 100%;
+    padding: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .width-change{
+        width: 90%;
+        text-align: center;
+    }
+    .cover-para{
+        width: 100%;
+        font-size: 15px;
+    }
+    .typical{
+        font-size: 30px;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+    }
+  }
